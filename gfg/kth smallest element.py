@@ -11,3 +11,19 @@ class Solution:
         s.sort()
         return s[k-1]
         
+
+        
+        
+        #using vector
+        int kthSmallest(int arr[], int l, int r, int k) {
+        //code here
+        vector<int> v;
+        for(int i=0;i<=r;i++)
+        {
+            v.push_back(arr[i]);
+
+        }
+        sort(v.begin(),v.end());
+        return v[k-1];
+        
+    }
